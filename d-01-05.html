@@ -18,7 +18,7 @@
       <h1>Laymic test</h1>
       <p>Original Blogger test images hosted on Imgur. Image dimensions: 1700 × 2400 px.</p>
 
-      <div class="laymic_template" data-viewer-id="manga1">
+      <div class="laymic_template" data-page-width="1700" data-page-height="2400" data-viewer-id="manga1">
         <img data-src="https://i.imgur.com/TumbQDB.png" /> 
         <img data-src="https://i.imgur.com/BD26vwr.png" />   
         <img data-src="https://i.imgur.com/2emNEXD.png" /> 
@@ -36,12 +36,7 @@
 <!--laymic.js v2.2.2 - github.com/dettalant/laymic-->
 <script src="https://cdn.jsdelivr.net/npm/@dettalant/laymic@2.2.2/dist/laymic.iife.min.js"></script>
 <script>
-  new laymic.LaymicApplicator(".laymic_template", {
-    // 原稿画像横幅
-    pageWidth: 1700,
-    // 原稿画像縦幅
-    pageHeight: 2400,
-  })
+  new laymic.LaymicApplicator(".laymic_template")
 </script>
 
 </body>
