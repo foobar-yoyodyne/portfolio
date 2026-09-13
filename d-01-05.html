@@ -18,20 +18,31 @@
       <h1>Laymic test</h1>
       <p>Original Blogger test images hosted on Imgur. Image dimensions: 1700 × 2400 px.</p>
 
-      <a class="laymic_opener" data-for="manga1" href="#manga1">総集編を読む</a>
-
-      <div class="laymic_template" data-viewer-id="manga1" id="manga1">
-        <img data-src="https://i.imgur.com/TumbQDB.png" alt="D-01-05 page 1">
-        <img data-src="https://i.imgur.com/BD26vwr.png" alt="D-01-05 page 2">
-        <img data-src="https://i.imgur.com/2emNEXD.png" alt="D-01-05 page 3">
-        <img data-src="https://i.imgur.com/ER3e8M8.png" alt="D-01-05 page 4">
-        <img data-src="https://i.imgur.com/40DAL13.png" alt="D-01-05 page 5">
-        <img data-src="https://i.imgur.com/4MU12KL.png" alt="D-01-05 page 6">
+      <div class="laymic_template" data-viewer-id="manga1">
+        <img data-src="https://i.imgur.com/TumbQDB.png" /> 
+        <img data-src="https://i.imgur.com/BD26vwr.png" />   
+        <img data-src="https://i.imgur.com/2emNEXD.png" /> 
+        <img data-src="https://i.imgur.com/ER3e8M8.png" /> 
+        <img data-src="https://i.imgur.com/40DAL13.png" /> 
+        <img data-src="https://i.imgur.com/4MU12KL.png" /> 
       </div>
+      
+      <button class="laymic_opener" data-for="manga1" type="button"><span style="font-family: Noto Sans JP;">
+        総集編を読む
+      </span></button>
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/laymic@2.2.2/dist/laymic.min.js"></script>
-  <script src="js/main.js"></script>
+<!--laymic.js v2.2.2 - github.com/dettalant/laymic-->
+<script src="https://cdn.jsdelivr.net/npm/@dettalant/laymic@2.2.2/dist/laymic.iife.min.js"></script>
+<script>
+  new laymic.LaymicApplicator(".laymic_template", {
+    // 原稿画像横幅
+    pageWidth: 1700,
+    // 原稿画像縦幅
+    pageHeight: 2400,
+  })
+</script>
+
 </body>
 </html>
